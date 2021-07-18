@@ -1,0 +1,379 @@
+
+-- Made by The Boys --
+
+local SHITSCRIPTV2 = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local FarmDiamondChest = Instance.new("TextLabel")
+local FarmGoldChest = Instance.new("TextLabel")
+local FarmGrayChest = Instance.new("TextLabel")
+local AutoPVPEnable = Instance.new("TextLabel")
+local FarmDiamondChestOn = Instance.new("TextButton")
+local FarmGoldChestOn = Instance.new("TextButton")
+local FarmGoldChestOff = Instance.new("TextButton")
+local FarmGrayChestOn = Instance.new("TextButton")
+local FarmGrayChestOff = Instance.new("TextButton")
+local FarmDiamondChestOff = Instance.new("TextButton")
+local AutoPVPEnableOn = Instance.new("TextButton")
+local AutoPVPEnableOff = Instance.new("TextButton")
+
+--Properties:
+
+SHITSCRIPTV2.Name = "SHIT SCRIPT V2"
+SHITSCRIPTV2.Parent = game.CoreGui
+SHITSCRIPTV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = SHITSCRIPTV2
+Main.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+Main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 3
+Main.Position = UDim2.new(0.717557251, 0, 0.0822407603, 0)
+Main.Size = UDim2.new(0, 266, 0, 397)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+Title.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderSizePixel = 2
+Title.Position = UDim2.new(-0.00166752655, 0, -0.000519152672, 0)
+Title.Size = UDim2.new(0, 265, 0, 43)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "SHIT SCRIPT V2"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+FarmDiamondChest.Name = "Farm Diamond Chest"
+FarmDiamondChest.Parent = Main
+FarmDiamondChest.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+FarmDiamondChest.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FarmDiamondChest.BorderSizePixel = 2
+FarmDiamondChest.Position = UDim2.new(-0.00166752655, 0, 0.208176494, 0)
+FarmDiamondChest.Size = UDim2.new(0, 188, 0, 43)
+FarmDiamondChest.Font = Enum.Font.SourceSans
+FarmDiamondChest.Text = "Farm Diamond Chest"
+FarmDiamondChest.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmDiamondChest.TextScaled = true
+FarmDiamondChest.TextSize = 14.000
+FarmDiamondChest.TextWrapped = true
+
+FarmGoldChest.Name = "Farm Gold Chest"
+FarmGoldChest.Parent = Main
+FarmGoldChest.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+FarmGoldChest.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FarmGoldChest.BorderSizePixel = 2
+FarmGoldChest.Position = UDim2.new(-0.00166752655, 0, 0.396859705, 0)
+FarmGoldChest.Size = UDim2.new(0, 188, 0, 43)
+FarmGoldChest.Font = Enum.Font.SourceSans
+FarmGoldChest.Text = "Farm Gold Chest"
+FarmGoldChest.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmGoldChest.TextScaled = true
+FarmGoldChest.TextSize = 14.000
+FarmGoldChest.TextWrapped = true
+
+FarmGrayChest.Name = "Farm Gray Chest"
+FarmGrayChest.Parent = Main
+FarmGrayChest.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+FarmGrayChest.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FarmGrayChest.BorderSizePixel = 2
+FarmGrayChest.Position = UDim2.new(-0.00166752655, 0, 0.578365922, 0)
+FarmGrayChest.Size = UDim2.new(0, 188, 0, 43)
+FarmGrayChest.Font = Enum.Font.SourceSans
+FarmGrayChest.Text = "Farm Gray Chest"
+FarmGrayChest.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmGrayChest.TextScaled = true
+FarmGrayChest.TextSize = 14.000
+FarmGrayChest.TextWrapped = true
+
+AutoPVPEnable.Name = "Auto PVP Enable"
+AutoPVPEnable.Parent = Main
+AutoPVPEnable.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+AutoPVPEnable.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoPVPEnable.BorderSizePixel = 2
+AutoPVPEnable.Position = UDim2.new(-0.00166752655, 0, 0.762244999, 0)
+AutoPVPEnable.Size = UDim2.new(0, 188, 0, 43)
+AutoPVPEnable.Font = Enum.Font.SourceSans
+AutoPVPEnable.Text = "Auto PVP Enable"
+AutoPVPEnable.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPVPEnable.TextScaled = true
+AutoPVPEnable.TextSize = 14.000
+AutoPVPEnable.TextWrapped = true
+
+FarmDiamondChestOn.Name = "Farm Diamond Chest On"
+FarmDiamondChestOn.Parent = Main
+FarmDiamondChestOn.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+FarmDiamondChestOn.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FarmDiamondChestOn.BorderSizePixel = 2
+FarmDiamondChestOn.Position = UDim2.new(0.705099225, 0, 0.208176464, 0)
+FarmDiamondChestOn.Size = UDim2.new(0, 76, 0, 43)
+FarmDiamondChestOn.Font = Enum.Font.SourceSans
+FarmDiamondChestOn.Text = "On"
+FarmDiamondChestOn.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmDiamondChestOn.TextScaled = true
+FarmDiamondChestOn.TextSize = 14.000
+FarmDiamondChestOn.TextWrapped = true
+
+FarmDiamondChestOn.MouseButton1Down:connect(function()
+	FarmDiamondChestOff.Visible = true
+	FarmDiamondChestOn.Visible = false
+	_G.AutoFarmDiamondChest = false
+	while _G.AutoFarmDiamondChest == true do
+		wait()
+		for i,b in pairs(game.Workspace:GetDescendants()) do
+			if b.Name == "Chest3" then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = b.CFrame
+			end
+		end
+	end
+end)
+
+FarmGoldChestOn.Name = "Farm Gold Chest On"
+FarmGoldChestOn.Parent = Main
+FarmGoldChestOn.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+FarmGoldChestOn.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FarmGoldChestOn.BorderSizePixel = 2
+FarmGoldChestOn.Position = UDim2.new(0.705099225, 0, 0.396859705, 0)
+FarmGoldChestOn.Size = UDim2.new(0, 78, 0, 43)
+FarmGoldChestOn.Font = Enum.Font.SourceSans
+FarmGoldChestOn.Text = "On"
+FarmGoldChestOn.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmGoldChestOn.TextScaled = true
+FarmGoldChestOn.TextSize = 14.000
+FarmGoldChestOn.TextWrapped = true
+
+FarmGoldChestOn.MouseButton1Down:connect(function()
+	FarmGoldChestOn.Visible = false
+	FarmGoldChestOff.Visible = true
+	_G.AutoFarmGoldChest = false
+	while _G.AutoFarmGoldChest == true do
+		wait()
+		for i,b in pairs(game.Workspace:GetDescendants()) do
+			if b.Name == "Chest2" then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = b.CFrame
+			end
+		end
+	end
+end)
+
+FarmGoldChestOff.Name = "Farm Gold Chest Off"
+FarmGoldChestOff.Parent = Main
+FarmGoldChestOff.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+FarmGoldChestOff.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FarmGoldChestOff.BorderSizePixel = 2
+FarmGoldChestOff.Position = UDim2.new(0.705099225, 0, 0.396859705, 0)
+FarmGoldChestOff.Size = UDim2.new(0, 78, 0, 43)
+FarmGoldChestOff.Font = Enum.Font.SourceSans
+FarmGoldChestOff.Text = "Off"
+FarmGoldChestOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmGoldChestOff.TextScaled = true
+FarmGoldChestOff.TextSize = 14.000
+FarmGoldChestOff.TextWrapped = true
+
+FarmGoldChestOff.MouseButton1Down:connect(function()
+	FarmGoldChestOn.Visible = true
+	FarmGoldChestOff.Visible = false
+	_G.AutoFarmGoldChest = true
+	while _G.AutoFarmGoldChest == true do
+		wait()
+		for i,b in pairs(game.Workspace:GetDescendants()) do
+			if b.Name == "Chest2" then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = b.CFrame
+			end
+		end
+	end
+end)
+
+FarmGrayChestOn.Name = "Farm Gray Chest On"
+FarmGrayChestOn.Parent = Main
+FarmGrayChestOn.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+FarmGrayChestOn.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FarmGrayChestOn.BorderSizePixel = 2
+FarmGrayChestOn.Position = UDim2.new(0.705099225, 0, 0.578219891, 0)
+FarmGrayChestOn.Size = UDim2.new(0, 78, 0, 43)
+FarmGrayChestOn.Font = Enum.Font.SourceSans
+FarmGrayChestOn.Text = "On"
+FarmGrayChestOn.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmGrayChestOn.TextScaled = true
+FarmGrayChestOn.TextSize = 14.000
+FarmGrayChestOn.TextWrapped = true
+
+FarmGrayChestOn.MouseButton1Down:connect(function()
+	FarmGrayChestOn.Visible = false
+	FarmGrayChestOff.Visible = true
+	_G.AutoFarmGrayChest = false
+	while _G.AutoFarmGrayChest == true do
+		wait()
+		for i,v in pairs(game.Workspace:GetDescendants()) do
+			if v.Name == "Chest1" then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+			end
+		end
+	end
+end)
+
+FarmGrayChestOff.Name = "Farm Gray Chest Off"
+FarmGrayChestOff.Parent = Main
+FarmGrayChestOff.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+FarmGrayChestOff.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FarmGrayChestOff.BorderSizePixel = 2
+FarmGrayChestOff.Position = UDim2.new(0.705099225, 0, 0.578219891, 0)
+FarmGrayChestOff.Size = UDim2.new(0, 78, 0, 43)
+FarmGrayChestOff.Font = Enum.Font.SourceSans
+FarmGrayChestOff.Text = "Off"
+FarmGrayChestOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmGrayChestOff.TextScaled = true
+FarmGrayChestOff.TextSize = 14.000
+FarmGrayChestOff.TextWrapped = true
+
+FarmGrayChestOff.MouseButton1Down:connect(function()
+	FarmGrayChestOn.Visible = true
+	FarmGrayChestOff.Visible = false
+	_G.AutoFarmGrayChest = true
+	while _G.AutoFarmGrayChest == true do
+		wait()
+		for i,v in pairs(game.Workspace:GetDescendants()) do
+			if v.Name == "Chest1" then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+			end
+		end
+	end
+end)
+
+FarmDiamondChestOff.Name = "Farm Diamond Chest Off"
+FarmDiamondChestOff.Parent = Main
+FarmDiamondChestOff.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+FarmDiamondChestOff.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FarmDiamondChestOff.BorderSizePixel = 2
+FarmDiamondChestOff.Position = UDim2.new(0.705099225, 0, 0.208176464, 0)
+FarmDiamondChestOff.Size = UDim2.new(0, 76, 0, 43)
+FarmDiamondChestOff.Font = Enum.Font.SourceSans
+FarmDiamondChestOff.Text = "Off"
+FarmDiamondChestOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmDiamondChestOff.TextScaled = true
+FarmDiamondChestOff.TextSize = 14.000
+FarmDiamondChestOff.TextWrapped = true
+
+FarmDiamondChestOff.MouseButton1Down:connect(function()
+	FarmDiamondChestOn.Visible = true
+	FarmDiamondChestOff.Visible = false
+	_G.AutoFarmDiamondChest = true
+	while _G.AutoFarmDiamondChest == true do
+		wait()
+		for i,b in pairs(game.Workspace:GetDescendants()) do
+			if b.Name == "Chest3" then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = b.CFrame
+			end
+		end
+	end
+end)
+
+AutoPVPEnableOn.Name = "Auto PVP Enable On"
+AutoPVPEnableOn.Parent = Main
+AutoPVPEnableOn.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+AutoPVPEnableOn.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoPVPEnableOn.BorderSizePixel = 2
+AutoPVPEnableOn.Position = UDim2.new(0.705099225, 0, 0.762098968, 0)
+AutoPVPEnableOn.Size = UDim2.new(0, 78, 0, 43)
+AutoPVPEnableOn.Font = Enum.Font.SourceSans
+AutoPVPEnableOn.Text = "On"
+AutoPVPEnableOn.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPVPEnableOn.TextScaled = true
+AutoPVPEnableOn.TextSize = 14.000
+AutoPVPEnableOn.TextWrapped = true
+
+AutoPVPEnableOn.MouseButton1Down:connect(function()
+	AutoPVPEnableOn.Visible = false
+	AutoPVPEnableOff.Visible = true
+	_G.AutoEnablePVP = true
+	while _G.AutoEnablePVP == true do
+		wait()
+		local Player = game.Players.LocalPlayer
+		local Path = Player.PlayerGui.Main.Settings.PvpEnableButton
+		for i,v in pairs(getconnections(Path.MouseButton1Click)) do
+			v:Fire()
+		end
+	end
+end)
+
+AutoPVPEnableOff.Name = "Auto PVP Enable Off"
+AutoPVPEnableOff.Parent = Main
+AutoPVPEnableOff.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+AutoPVPEnableOff.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoPVPEnableOff.BorderSizePixel = 2
+AutoPVPEnableOff.Position = UDim2.new(0.705099225, 0, 0.762098968, 0)
+AutoPVPEnableOff.Size = UDim2.new(0, 78, 0, 43)
+AutoPVPEnableOff.Font = Enum.Font.SourceSans
+AutoPVPEnableOff.Text = "Off"
+AutoPVPEnableOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPVPEnableOff.TextScaled = true
+AutoPVPEnableOff.TextSize = 14.000
+AutoPVPEnableOff.TextWrapped = true
+
+AutoPVPEnableOff.MouseButton1Down:connect(function()
+	AutoPVPEnableOn.Visible = true
+	AutoPVPEnableOff.Visible = false
+	_G.AutoEnablePVP = true
+	while _G.AutoEnablePVP == true do
+		wait()
+		local Player = game.Players.LocalPlayer
+		local Path = Player.PlayerGui.Main.Settings.PvpEnableButton
+		for i,v in pairs(getconnections(Path.MouseButton1Click)) do
+			v:Fire()
+		end
+	end
+end)
+
+local UIS = game:GetService('UserInputService')
+local frame = Main
+local dragToggle = nil
+local dragSpeed = 0.25
+local dragStart = nil
+local startPos = nil
+
+local function updateInput(input)
+	local delta = input.Position - dragStart
+	local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+end
+
+frame.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+		dragToggle = true
+		dragStart = input.Position
+		startPos = frame.Position
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragToggle = false
+			end
+		end)
+	end
+end)
+
+UIS.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		if dragToggle then
+			updateInput(input)
+		end
+	end
+end)
+
+
+print("Made by Joey")
+warn("Made by Matthew")
+print("Made by Tamzid")
+
+
+local uis = game:GetService("UserInputService")
+
+uis.InputBegan:connect(function(inp)
+	if inp.KeyCode == Enum.KeyCode.RightControl  then
+		if Main.Visible then
+			Main.Visible = not frame.Visible
+		else
+			Main.Visible = true
+		end
+	end
+end)
